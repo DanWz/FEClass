@@ -46,6 +46,7 @@ console.log(bankAccountBalance == numberTest)
 console.log(10 % 3);
 //let vs var testing. seems let may be best practice. I must to more research on this.
 //added variables in mixing orders to see how/when variable assignment occurs.
+//adding new token instead of credentials
 let test = 1;
 let test2 = test
 test = 5
