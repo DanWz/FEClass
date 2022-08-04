@@ -43,6 +43,13 @@ console.log(bankAccountBalance * numberOfFriends);
 console.log(5 == 5);
 console.log(5==6);
 console.log(bankAccountBalance == numberTest)
+console.log(10 % 3);
+
+let test = 1;
+let test2 = test
+test = 5
+console.log(test2);
+console.log(test);
 
 
 
