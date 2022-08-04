@@ -44,7 +44,7 @@ console.log(5 == 5);
 console.log(5==6);
 console.log(bankAccountBalance == numberTest)
 console.log(10 % 3);
-
+//let vs var testing. seems let may be best practice. I must to more research on this.
 let test = 1;
 let test2 = test
 test = 5
