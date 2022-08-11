@@ -2,8 +2,8 @@
 let availableTickets = 5;
 		
 //create a variable to hold the cost of groceries at checkout
-//let grocerieTotal = 32.23; this one is broken!!!
-let grocerieTotal = 32.28;
+let grocerieTotal = 32.23; //this one is broken!!!
+//let grocerieTotal = 32.28;
 //create a variable to hold a person's middle initial
 let middleInitial = "D";
 
