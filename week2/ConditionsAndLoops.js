@@ -52,12 +52,20 @@ console.log((alarmSet == true && openDoor == true) ? "Sound Alarm!" : "Everythin
 // 9 will be Freshman, 10 Sophomore, 11 Junior, 12 Senior
 // Anything other than these values will return "Error" to the console
 
-
+for (i = 1; i <= 100; i++){
+    if (i % 2 === 0) {
+      console.log(i + " foo");  
+    }
+}
 
 
 
 // write a for loop that will iterate backwards from 10 to -10
-
+for (i = 10; i >= -10; i--){
+    {
+      console.log(i);  
+    }
+}
 
 
 // write a do/while loop that prints 1 through 50
