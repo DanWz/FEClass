@@ -125,18 +125,22 @@ console.log(willBuyDrink(true, 100)); //true
 console.log(willBuyDrink(true, 10)); //false
 
 //Question 13:
+// a function called isItTimeToWaterTomatoes that accepts boolean values haveTheyBeenWateredAlready, isTheSoilStillWet, and a number howHotIsIt.
 function isItTimeToWaterTomatoes(haveTheyBeenWateredAlready, isTheSoilStillWet, howHotIsIt){
     if(haveTheyBeenWateredAlready === true){
         return console.log('no they are already watered.')
+        //if the tomatoes have been watered there is no need to water them.
     } else if (isTheSoilStillWet === true && howHotIsIt <= 80){
         return console.log('not yet. but it will be time tomorrow morning');
+        //if the soil is still wet and it is cooler than 80 they can wait to be watered until tomorrow.
     } else {
         return console.log('better water them.');
+        //if it is too hot or the soil is dry it's best to water them.
+
     }
     }
 console.log('is it time to water my tomatoes?');
-let todayTemp = 80;
-let alreadywatered = false;
+let todayTemp = 85;
+let alreadywatered = true;
 let stillWet = true;
 isItTimeToWaterTomatoes(alreadywatered, stillWet, todayTemp);
-
