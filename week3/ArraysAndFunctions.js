@@ -181,6 +181,48 @@ console.log(addingMachine(46, -10, 2));
 // create a function that will allow you to check how much of a bonus you make
 // the function should take in two variables as arguments, grossInvoiced and profitMargin
 function bracketSystem (grossInvoiced, profitMargin) {
+    let profits = grossInvoiced * profitMargin;
+    let bonus = 0;
+    //console.log('gross estimante from job: ' + grossInvoiced + ' Profit margin expected: ' + profitMargin + '%');
+    //console.log('estimated profits from the job: ' + profits);
+    //brackets to indicate the thresholds to exceed in order to earn bonuses.
+    let bracket1 = [100000, .1];
+    let bracket2 = [400000, .2];
+    let bracket3 = [500000, .35];
+    let bracket4 = [1000000, .4];
 
+    let myBonusMax1 = bracket1[0] * bracket1[1];
+    let myBonusMax2 = bracket2[0] * bracket2[1] + myBonusMax1;
+    let myBonusMax3 = bracket3[0] * bracket3[1] + myBonusMax2;
+    let myBonusMax4 = bracket4[0] * bracket4[1] + myBonusMax3;
+
+    
+    if (profits <= bracket1[0]) {
+        //if profits are less than 100k 
+        bonus += profits * bracket1[1];
+        //console.log('profits were <= 100k. I earned:');
+    } else if (profits <= bracket1[0] + bracket2[0]) {
+        // if profits are over 100k and less <= (100k + 400k)500k 
+        bonus += myBonusMax1 + ((profits - bracket1[0])*bracket2[1]);
+        //console.log('profits were <= 500k. I earned:');
+    } else if (profits <= bracket1[0] + bracket2[0] + bracket3[0]) {
+        // if profits are over 500k and less <=  1 million (100k + 400k + 500k)
+        bonus += myBonusMax2 + ((profits - bracket1[0] - bracket2[0])*bracket3[1]);
+        //console.log('profits were <= 1 million. I earned:');
+    } else if (profits > bracket4[0]) {
+        // if profits are over 1 million (100k + 400k + 500k) 
+        bonus += myBonusMax3 + ((profits - bracket1[0] - bracket2[0] - bracket3[0])*bracket4[1]);
+        //console.log('profits were > 1 million. I earned:');
+    } else {
+        return "failure has occured.";
+    }
+    return bonus;
 }
 
+console.log(bracketSystem(10045, 1)); // <100k
+console.log(bracketSystem(100000, 1)); // 100k
+console.log(bracketSystem(150045, 1)); // >100k < 500k
+console.log(bracketSystem(500000, 1)); // 500k
+console.log(bracketSystem(900045, 1)); // >500k<1mil
+console.log(bracketSystem(1200045, 1)); //over a million
+console.log(bracketSystem(1200045, .5)); //50% profit margin
