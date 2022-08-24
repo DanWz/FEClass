@@ -132,7 +132,7 @@ function printArray(x){
 // for testing purposes
 printArray(input);
 
-*/
+
 // Write a function called sortArray that accepts an array as an argument. Within the function, sort the array alphabetically or numerically. Return the sorted array.
 
 var fs = require("fs");
@@ -150,3 +150,12 @@ function sortArray (x){
 // for testing purposes
 
 console.log(sortArray(input));
+*/
+var userNumber = 10;
+if ( userNumber <= 100 && userNumber >= 1 ) {
+    while ( userNumber <= 100 ) {
+        console.log(userNumber++);
+    }
+} else {
+    console.log("Your number was not between 1 and 100.");
+}
