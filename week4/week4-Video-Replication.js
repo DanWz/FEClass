@@ -22,6 +22,12 @@ console.log(y);
     console.log(y);
 }
 console.log(y);
+{
+    let z = 'sauce';
+    console.log(z);
+
+}
+console.log(z);
 /*
 {
     y = 3; // should not work because const cannot be assigned in such away as to persist outside of the code block. uncaught typeError.
@@ -81,7 +87,7 @@ function logUsername(user){
 sendHttpRequest('getUser', logUsername); // when using a callback, the function is not called directly but by the original function 'sentHttpRequest'
 
 sendHttpRequest('getUser', user => console.log(user)); // this is an anonymous function call.
-*/
+
 
 //////////////////////////////////////Promises //////////////////////////////////////
 // an object that indicates the eventual completion (success || failure) of an operation
@@ -104,3 +110,5 @@ function handleError (err){
 soSomethingThatReturnsAPromise()
     .then(handleEvent)
     .catch(handleError);
+
+    */
