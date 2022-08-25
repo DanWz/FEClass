@@ -28,6 +28,17 @@ console.log(y);
 
 }
 console.log(z);
+{
+    var z = 'zsauce';
+    console.log(z);
+
+}
+console.log(z);
+
+let array1 = [1,2,3];
+for (let i = 0; i < array1.length; i++) {
+    console.log(i);
+}
 /*
 {
     y = 3; // should not work because const cannot be assigned in such away as to persist outside of the code block. uncaught typeError.
