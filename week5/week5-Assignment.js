@@ -16,14 +16,14 @@ class PreparedSpellList {
         this.spellList = [];
     }
 
-    addSpell(newSpell) {
-        if (newSpell instanceof Spells){
-            this.spellList.push(newSpell);
-        } else {
-            throw new Error(`You can only add an instance of Spells. Entered data ${newSpell} is not an instance of the correct class.`);
-        }
+    // addSpell(newSpell) {
+    //     if (newSpell instanceof Spells){
+    //         this.spellList.push(newSpell);
+    //     } else {
+    //         throw new Error(`You can only add an instance of Spells. Entered data ${newSpell} is not an instance of the correct class.`);
+    //     }
 
-    }
+    // }
 
     describe() {
         return `Spell list contains ${this.spellList.length} spells`;
@@ -59,7 +59,7 @@ class Menu {
             pick = this.showTopMenuOptions();
         }
 
-        alert(`happy casting!`);
+        alert(`Happy Casting!`);
     }
 
     showTopMenuOptions() {
