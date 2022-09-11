@@ -2,7 +2,7 @@
   "name": "week6",
   "version": "1.0.0",
   "description": "week6 mocha and chai intro",
-  "main": "week6-Video-Replication.js",
+  "main": "week6-WAR.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
