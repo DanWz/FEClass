@@ -1,4 +1,4 @@
-//const assert = require('chai').aeert;
+//const assert = require('chai').aeert; //this didn't work
 var expect = chai.expect;
 //import { createPlayers } from "./week6-WAR.js";
 //const { createPlayers } = require('..week6-WAR');
