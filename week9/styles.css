@@ -1,0 +1,63 @@
+ body {
+    background-color: rgb(156, 247, 250);
+}
+
+#links {
+text-align: center;
+border: 5px solid black;
+}
+
+.link {
+    text-decoration: none;
+}
+.link:hover {
+    /* background-color: blue; */
+    text-decoration: underline;
+}
+
+h1.title {
+    text-align: center;
+}
+
+h1 {
+    color:rgb(3, 8, 250)
+}
+
+h3 {
+    color: rgb(59, 104, 252);
+}
+
+h4 {
+    color: rgb(77, 80, 252);
+}
+
+table {
+    border-collapse: collapse;
+    width: 30%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left; 
+    border-bottom: 1px solid black;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(252, 243, 243);
+}
+
+td:hover {
+    background-color: gray;
+}
+
+p {
+    text-indent: 5%;
+}
+
+img {
+    border: 5px solid rgb(185, 248, 38);
+}
+
+
+
+    
